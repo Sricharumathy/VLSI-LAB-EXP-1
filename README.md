@@ -1,31 +1,28 @@
-# VLSI LAB EXPERIMENT 01
-## SIMULATION AND IMPLEMENTATION OF LOGIC GATES ANd 4 BIT ADDER & SUBTRACTOR 
-### AIM:
+# SIMULATION AND IMPLEMENTATION OF LOGIC GATES ANd 4 BIT ADDER & SUBTRACTOR 
+
+## AIM
 To simulate and synthesis Logic Gates, Adders and Subtractor using VIVADO
-### APPARATUS REQUIRED:
+
+## APPARATUS REQUIRED
 VIVADO 2023.2
-### PROCEDURE:
- STEP:1 Start the Vivado, Select and Name the New project. 
 
+## PROCEDURE
+ STEP:1 Start the Vivado, Select and Name the New project.
  
- STEP:2 Select the device family, device, package and speed. 
-
+ STEP:2 Select the device family, device, package and speed.
  
  STEP:3 Select new source in the New Project and select Verilog Module as the Source type.
 
- 
  STEP:4 Type the File Name and Click Next and then finish button. Type the code and save it.
 
- 
  STEP:5 Select the Behavioural Simulation in the Source Window and click the check syntax.
 
- 
  STEP:6 Click the simulation to simulate the program and give the inputs and verify the outputs as per the truth table.
 
- 
-## LOGIC-GATES:
+## LOGIC-GATES
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/82dcd0f0-6349-431d-9e34-0358e3ae1773)
-## Program:
+
+## PROGRAM
 ```
 module LG(a, b, c0, c1, c2, c3, c4, c5, c6);
 input a, b;
@@ -39,12 +36,13 @@ xnor(c5, a, b);
 not(c6, a);
 endmodule
 ```
-## Output
+## OUTPUT
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/ebcf71dc-a933-4321-9acd-0755217bb27d)
 
-## Half Adder:
+## HALF ADDER
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/71407301-2078-4778-b822-4154f739fe4d)
-## Program
+
+## PROGRAM
 ```
 module HA (a, b, sum, carry);
 input a, b;
@@ -53,12 +51,14 @@ xor g1(sum, a, b);
 and g2 (carry, a, b);
 endmodule
 ```
-## Output
+
+## OUTPUT
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/d398bc14-f3d7-457c-96c3-0f62205fea17)
 
-## Half Subtractor:
+## HALF SUBTRACTOR
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/bdc11a7c-42cf-4cb8-8d7a-e0798e892955)
-## Program
+
+## PROGRAM
 ```
 module HS (a, b, diff, borrow);
 input a, b;
@@ -67,13 +67,14 @@ xor gl (diff, a, b);
 and g2 (borrow,  ~a, b);
 endmodule
 ```
-## Output 
+
+## OUTPUT
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/d20b079f-2393-4d1f-ab82-e820b0b35f57)
 
-
-## Full Adder:
+## FULL ADDER
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/afb2a790-069c-437a-aada-77b470ff5956)
-## Program
+
+## PROGRAM
 ```
 module FA(a, b, c, sum, carry);
 input a, b, c;
@@ -86,13 +87,13 @@ and g4(w3, w1, c);
 or  g5(carry, w3, w2);
 endmodule
 ```
-## Output
+## OUTPUT
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/681e6140-291b-4c05-8fe0-e390cf90b319)
 
-
-## Full Subtractor:
+## FULL SUBTRACTOR
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/8741381a-a75e-43fe-99a8-2c93119e6e4d)
-## Program
+
+## PROGRAM
 ```
 module FS(a, b, c, diff, borrow);
 input a, b, c;
@@ -105,12 +106,14 @@ and g4(z, c, ~x);
 or  g5(borrow, y, z);
 endmodule
 ```
-## Output
+
+## OUTPUT
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/66b1cb39-57c7-4006-a82b-f2a6458ba42f)
 
-## Ripple Carry Adder:
+## RIPPLE CARRY ADDER
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/bc98a322-11d7-47e4-a8ca-1d3ddfd4adca)
-## Program
+
+## PROGRAM
 ```
 module FA(a, b, c, sum, carry);
 input a, b, c;
@@ -135,9 +138,11 @@ FA f7(a[6], b[6], w[5], sum[6], w[6]);
 FA f8(a[7], b[7], w[6], sum[7], carry);
 endmodule
 ```
-## Output
+
+## OUTPUT
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/6c5666c4-fd23-4460-b1eb-9e8bdf7ff854)
-## Result:
+
+## RESULT
 Thus, the logic gates and 4 Bit of Adder and Subtractor are implemented and simulated successfully.
                       
 
