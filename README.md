@@ -22,6 +22,7 @@ VIVADO 2023.2
 ## LOGIC-GATES
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/82dcd0f0-6349-431d-9e34-0358e3ae1773)
 
+
 ## PROGRAM
 ```
 module LG(a, b, c0, c1, c2, c3, c4, c5, c6);
@@ -42,6 +43,7 @@ endmodule
 ## HALF ADDER
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/71407301-2078-4778-b822-4154f739fe4d)
 
+
 ## PROGRAM
 ```
 module HA (a, b, sum, carry);
@@ -58,6 +60,7 @@ endmodule
 ## HALF SUBTRACTOR
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/bdc11a7c-42cf-4cb8-8d7a-e0798e892955)
 
+
 ## PROGRAM
 ```
 module HS (a, b, diff, borrow);
@@ -73,6 +76,7 @@ endmodule
 
 ## FULL ADDER
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/afb2a790-069c-437a-aada-77b470ff5956)
+
 
 ## PROGRAM
 ```
@@ -92,6 +96,7 @@ endmodule
 
 ## FULL SUBTRACTOR
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/8741381a-a75e-43fe-99a8-2c93119e6e4d)
+
 
 ## PROGRAM
 ```
@@ -113,6 +118,7 @@ endmodule
 ## RIPPLE CARRY ADDER
 ![image](https://github.com/Sricharumathy/HDL-Programming/assets/159044760/bc98a322-11d7-47e4-a8ca-1d3ddfd4adca)
 
+
 ## PROGRAM
 ```
 module FA(a, b, c, sum, carry);
@@ -121,7 +127,6 @@ output sum, carry;
 assign sum=a ^ b ^ c;
 assign carry=a & b|b & c|a & c;
 endmodule
-
 module RCA(a, b, c, sum, carry);
 input [7:0] a, b;
 input c;
